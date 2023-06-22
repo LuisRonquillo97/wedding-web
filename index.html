@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LUIS Y MARIFER - 19 AGOSTO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./src/plugins/bootstrap-5.3.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./src/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./src/plugins/bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <script src="./src/js/index.js" type="text/javascript"></script>
+  </head>
+  <body class="container-fluid">
+    <div class="mt-lg-5"></div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center cursive-main title">¡Nos casamos!</p>
+      </div>
+    </div>
+    <div class="mt-lg-2"></div>
+    <div class="row">
+      <div class="col-4">
+        <h3 class="cursive-main text-center subtitle">Luis</h3>
+      </div>
+      <div class="col-4 mt-lg-5">
+        <h3 class="cursive-main text-center subtitle">&</h3>
+      </div>
+      <div class="col-4 mt-lg-5">
+        <h3 class="cursive-main text-center subtitle mt-lg-5">Marifer</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 image-separator-one">
+        <p class="text-center cursive-main title text-white">¡Save the date!</p>
+        <br />
+        <p class="text-center cursive-main giga-title text-white">
+          19 de agosto de 2023
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="m-lg-3 cursive-main subtitle">Te esperamos en:</p>
+      </div>
+      <div class="col-4">
+        <p class="m-lg-5 regular-text cursive-main">
+          Quinta real paraíso maya, Conkal, Yucatán
+        </p>
+      </div>
+      <div class="col-8">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.7774650033043!2d-89.5555147250176!3d21.081548480581013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5677f9d942d2e3%3A0xf4b7901023b30f0a!2sQuinta%20Real%20Paraiso%20Maya!5e0!3m2!1ses-419!2smx!4v1687392231302!5m2!1ses-419!2smx"
+          width="950"
+          height="350"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 image-separator-one">
+        <p class="cursive-main title text-white">faltan:</p>
+        <br />
+        <p class="cursive-main subtitle text-white">
+          <span id="monthsLeft"></span> meses, <span id="daysLeft"></span> días,
+          <span id="hoursLeft"></span> horas,
+          <span id="minutesLeft"></span> minutos,
+          <span id="SecondsLeft"></span> segundos
+        </p>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function recursiveTime() {
+      const timeRemaining = GetTimeRemaining();
+      console.log(`faltan: ${timeRemaining.seconds} segundos`);
+      document.getElementById("monthsLeft").innerText = timeRemaining.months;
+      document.getElementById("daysLeft").innerText = timeRemaining.days;
+      document.getElementById("hoursLeft").innerText = timeRemaining.hours;
+      document.getElementById("minutesLeft").innerText = timeRemaining.minutes;
+      document.getElementById("SecondsLeft").innerText = timeRemaining.seconds;
+      setTimeout(recursiveTime, 1000);
+    }
+    window.onload = function () {
+      console.log("terminé");
+      recursiveTime();
+    };
+  </script>
+</html>
