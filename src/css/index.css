@@ -21,10 +21,9 @@
   background-position-y: 25%;
 }
 .image-separator-two {
-  background-image: url("../media/beach-sunset-bg.jpg");
+  background-image: url("../media/wedding-sunset-bg.jpg");
   height: 100%;
   opacity: 70%;
   background-position: center;
-  background-position-y: 65%;
-  background-position-x: right;
+  background-position-y: 43%;
 }
