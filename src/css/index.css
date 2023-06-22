@@ -2,16 +2,16 @@
   font-family: "Dancing Script", cursive;
 }
 .title {
-  font-size: 70px;
+  font-size: 300%;
 }
 .giga-title {
-  font-size: 150px;
+  font-size: 650%;
 }
 .subtitle {
-  font-size: 50px;
+  font-size: 230%;
 }
 .regular-text {
-  font-size: 30px;
+  font-size: 130%;
 }
 .image-separator-one {
   background-image: url("../media/boho-bg-1.jpg");
