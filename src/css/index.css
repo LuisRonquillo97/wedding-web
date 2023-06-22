@@ -14,16 +14,16 @@
   font-size: 130%;
 }
 .image-separator-one {
-  background-image: url("../media/proposal-table-bg.jpeg");
+  background-image: url("../media/boho-bg-1.jpg");
   height: 100%;
   opacity: 70%;
   background-position: center;
   background-position-y: 25%;
 }
 .image-separator-two {
-  background-image: url("../media/proposal-hug-bg.jpeg");
+  background-image: url("../media/beach-sunset-bg.jpg");
   height: 100%;
   opacity: 70%;
   background-position: center;
-  background-position-y: 25%;
+  background-position-y: 65%;
 }
