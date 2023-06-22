@@ -70,8 +70,7 @@
           <p class="cursive-main regular-text text-black">
             <span id="monthsLeft"></span> mes, <span id="daysLeft"></span> días,
             <span id="hoursLeft"></span> horas,
-            <span id="minutesLeft"></span> minutos,
-            <span id="SecondsLeft"></span> segundos
+            <span id="minutesLeft"></span> minutos
           </p>
         </div>
       </div>
@@ -85,7 +84,6 @@
       document.getElementById("daysLeft").innerText = timeRemaining.days;
       document.getElementById("hoursLeft").innerText = timeRemaining.hours;
       document.getElementById("minutesLeft").innerText = timeRemaining.minutes;
-      document.getElementById("SecondsLeft").innerText = timeRemaining.seconds;
       setTimeout(recursiveTime, 1000);
     }
     window.onload = function () {
